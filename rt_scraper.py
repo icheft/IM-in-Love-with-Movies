@@ -127,9 +127,10 @@ class MovieScraper(RTScraper):
 
 if __name__ == '__main__':
 
-    movie_df = pd.read_excel('data/movie_data_set.xlsx', index_col=0)
-    u_movie_df = pd.read_excel('data/update_movie_data_set.xlsx', index_col=0)
-    start_id = u_movie_df.shape[0]
+    # movie_df = pd.read_excel('data/movie_data_set.xlsx', index_col=0)
+    # u_movie_df = pd.read_excel('data/update_movie_data_set.xlsx', index_col=0)
+    # start_id = u_movie_df.shape[0]
+    movie_df = pd.read_excel('data/all_movie.xlsx')
     data_row = dict()
 
     def get_rt_info(data_row):
@@ -150,8 +151,7 @@ if __name__ == '__main__':
         return data_row
 
     # u_movie_df = movie_df.iloc[:6, :].apply(get_rt_info, axis=1)
+    tqdm.pandas()
+    movie_df = movie_df.progress_apply(get_rt_info, axis=1)
 
-    u_movie_df = pd.concat(
-        [u_movie_df, movie_df.iloc[start_id:, :].apply(get_rt_info, axis=1)], ignore_index=True)
-
-    u_movie_df.to_excel('data/update_movie_data_set.xlsx')
+    movie_df.to_excel('data/all_movie.xlsx')
