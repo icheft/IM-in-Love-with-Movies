@@ -5,7 +5,6 @@ from tmdbv3api import Movie, Discover
 import pandas as pd
 import numpy as np
 import json
-# from rotten_tomatoes_scraper.rt_scraper import MovieScraper
 from rt_scraper import MovieScraper
 from tqdm import tqdm
 
@@ -26,9 +25,9 @@ tmdb.debug = True
 #     reader = csv.reader(f)
 #     movie_id = list(reader)[0]
 # post-covid
-with open('data/covid_movie_id.csv', newline='') as f:
-    reader = csv.reader(f)
-    movie_id = list(reader)[0]
+# with open('data/covid_movie_id.csv', newline='') as f:
+#     reader = csv.reader(f)
+#     movie_id = list(reader)[0]
 
 
 col_names = ['id',
