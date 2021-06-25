@@ -44,7 +44,9 @@ col_names = ['id',
              'rotten_score',
              'rating',
              'rotten_aud_score',
-             'zh_title']
+             'zh_title',
+             'belongs_to_collection',
+             'has_homepage']
 
 with open('data/movie_id.csv', newline='') as f:
     reader = csv.reader(f)

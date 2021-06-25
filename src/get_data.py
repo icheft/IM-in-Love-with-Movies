@@ -21,9 +21,9 @@ tmdb.debug = True
 
 
 # pre-covid
-# with open('data/movie_id.csv', newline='') as f:
-#     reader = csv.reader(f)
-#     movie_id = list(reader)[0]
+with open('data/movie_id.csv', newline='') as f:
+    reader = csv.reader(f)
+    movie_id = list(reader)[0]
 # post-covid
 # with open('data/covid_movie_id.csv', newline='') as f:
 #     reader = csv.reader(f)
