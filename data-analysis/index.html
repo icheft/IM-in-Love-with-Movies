@@ -117,7 +117,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
@@ -349,8 +349,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-tmdb-vs-rotten-tomato" class="md-nav__link">
-    2.不同平台間觀眾評分比較: TMDb vs Rotten Tomato
+  <a href="#2-tmdb-vs-rotten-tomatoes" class="md-nav__link">
+    2.不同平台間觀眾評分比較: TMDb vs Rotten Tomatoes
   </a>
   
 </li>
@@ -909,10 +909,10 @@ ShapiroResult(statistic=0.6975903511047363, pvalue=0.0)
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>RanksumsResult(statistic=-5.26309699662061, pvalue=1.4164879821151155e-07)
 </code></pre></div>
-<p>由上述檢定結果（p-vlaue &lt; 0.05)，我們可以拒絕虛無假設，可以推論當女性演員數量大於男性演員數量時，票房較高。</p>
+<p>由上述檢定結果（<span class="arithmatex">\(p\)</span>-vlaue <span class="arithmatex">\(&lt; 0.05\)</span>)，我們可以拒絕虛無假設，可以推論當女性演員數量大於男性演員數量時，票房較高。</p>
 <h3 id="_5">四、評分網站的差異：<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <h4 id="1">1. 影評人與大眾評分差異比較：<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
-<p>電影評分網站Rotten Tomato有許多評分機制，其中最受到矚目的兩個分別是「影評人的評分」與「大眾的評分」。以此為發想，我們比較Rotten Tomato上影評人與大眾的評分是否存在差異。 </p>
+<p>電影評分網站 Rotten Tomatoes 有許多評分機制，其中最受到矚目的兩個分別是「影評人的評分」與「大眾的評分」。以此為發想，我們比較 Rotten Tomatoes 上影評人與大眾的評分是否存在差異。 </p>
 <div class="highlight"><pre><span></span><code><span class="n">df_compare_rating_1</span> <span class="o">=</span> <span class="n">u_movie_df</span><span class="p">[[</span><span class="s1">&#39;rotten_score&#39;</span><span class="p">,</span> <span class="s1">&#39;rotten_aud_score&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">df_compare_rating_1</span> <span class="o">=</span> <span class="n">df_compare_rating_1</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Head of dataset:&#39;</span><span class="p">)</span>
@@ -1066,7 +1066,7 @@ ShapiroResult(statistic=0.6975903511047363, pvalue=0.0)
 <div class="highlight"><pre><span></span><code>WilcoxonResult(statistic=875752.5, pvalue=1.4523706162642633e-55)
 </code></pre></div>
 <p>由檢定結果發現 p-value &lt; 0.05，因此我們可以拒絕虛無假設，推論專業影評人與觀眾評分不盡相同。</p>
-<h4 id="2-tmdb-vs-rotten-tomato">2.不同平台間觀眾評分比較: TMDb vs Rotten Tomato<a class="headerlink" href="#2-tmdb-vs-rotten-tomato" title="Permanent link">&para;</a></h4>
+<h4 id="2-tmdb-vs-rotten-tomatoes">2.不同平台間觀眾評分比較: TMDb vs Rotten Tomatoes<a class="headerlink" href="#2-tmdb-vs-rotten-tomatoes" title="Permanent link">&para;</a></h4>
 <p>我們好奇針對同一部電影在不同平台上的觀眾評分是否有差異，因此比較爛番茄觀眾評分及TMDb上的觀眾評分結果是否相同。</p>
 <div class="highlight"><pre><span></span><code><span class="n">df_compare_rating_2</span> <span class="o">=</span> <span class="n">u_movie_df</span><span class="p">[[</span><span class="s1">&#39;TMDB_score&#39;</span><span class="p">,</span><span class="s1">&#39;rotten_aud_score&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">df_compare_rating_2</span> <span class="o">=</span> <span class="n">df_compare_rating_2</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
