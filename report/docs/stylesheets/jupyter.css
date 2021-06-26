@@ -1,0 +1,61 @@
+table.dataframe {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: black;
+    font-size: 12px;
+    table-layout: fixed;
+}
+.dataframe thead {
+    border-bottom: 1px solid black;
+    vertical-align: bottom;
+}
+.dataframe tr,
+.dataframe th,
+.dataframe td {
+    text-align: right;
+    vertical-align: middle;
+    padding: 0.5em 0.5em;
+    line-height: normal;
+    white-space: normal;
+    max-width: none;
+    border: none;
+}
+.dataframe th {
+    font-weight: bold;
+}
+.dataframe tbody tr:nth-child(odd) {
+    background: #f5f5f5;
+}
+.dataframe tbody tr:hover {
+    background: rgba(66, 165, 245, 0.2);
+}
+
+.alert {
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+}
+
+.alert-info {
+    background-color: #9dbef7;
+    border-left: 5px solid #004cd0;
+}
+
+.alert-success {
+    background-color: #a8f0c6;
+    border-left: 5px solid #178344;
+}
+
+.alert-danger {
+    background-color: #f7a7a3;
+    border-left: 5px solid #8f130c;
+}
+
+.alert-warning {
+    background-color: #ffd48a;
+    border-left: 5px solid #8a5700;
+}

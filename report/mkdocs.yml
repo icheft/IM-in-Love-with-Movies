@@ -1,0 +1,76 @@
+site_name: 'GenEdu 5010 Final Project | IM in Love with Movies'
+nav:
+    - '簡介': index.md
+    - data-collection.md
+    - data-processing.md
+    - data-analysis.md
+    - conclusion.md
+
+theme: 
+    name: material
+    language: zh-TW
+    palette: 
+        # Light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: white
+          accent: pink
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to dark mode
+
+        # Dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: black
+          accent: purple
+          toggle:
+            icon: material/weather-night
+            name: Switch to light mode
+    icon:
+        logo: octicons/project-24
+    features:
+        - toc.integrate
+        - navigation.instant
+        - navigation.expand
+
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - pymdownx.keys
+    - pymdownx.inlinehilite
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.smartsymbols
+    - pymdownx.details
+    - pymdownx.tasklist
+    - admonition
+    - pymdownx.arithmatex:
+        generic: true
+    - toc:
+        permalink: true
+    - attr_list
+extra_javascript:
+    - js/config.js
+    - js/polyfill.js # https://polyfill.io/v3/polyfill.min.js?features=es6
+    - js/mathjax/tex-chtml.js
+    # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    # - js/tex-mml-chtml.js
+
+extra_css:
+    - stylesheets/jupyter.css
+
+plugins:
+    - search:
+        lang: en
+        prebuild_index: true
+
+repo_url: https://github.com/icheft/IM-in-Love-with-Movies
+repo_name: icheft/IM-in-Love-with-Movies
+
+copyright: "Copyright &copy; 2021 IM in Love with Movies @ ccClub, NTU"
+
+edit_uri: ""
