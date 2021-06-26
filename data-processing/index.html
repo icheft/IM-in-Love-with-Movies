@@ -1,0 +1,1499 @@
+
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>資料處理 - GenEdu 5010 Final Project | IM in Love with Movies</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/jupyter.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳轉到
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GenEdu 5010 Final Project | IM in Love with Movies" class="md-header__button md-logo" aria-label="GenEdu 5010 Final Project | IM in Love with Movies" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 6a.75.75 0 0 0-.75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A.75.75 0 0 0 7.25 6zM12 6a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 1.5 0v-4.5A.75.75 0 0 0 12 6zm4 .75a.75.75 0 0 1 1.5 0v9.5a.75.75 0 0 1-1.5 0v-9.5z"/><path fill-rule="evenodd" d="M3.75 2A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 20.25V3.75A1.75 1.75 0 0 0 20.25 2H3.75zM3.5 3.75a.25.25 0 0 1 .25-.25h16.5a.25.25 0 0 1 .25.25v16.5a.25.25 0 0 1-.25.25H3.75a.25.25 0 0 1-.25-.25V3.75z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GenEdu 5010 Final Project | IM in Love with Movies
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              資料處理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜尋" placeholder="搜尋" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜尋引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/icheft/IM-in-Love-with-Movies" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    icheft/IM-in-Love-with-Movies
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GenEdu 5010 Final Project | IM in Love with Movies" class="md-nav__button md-logo" aria-label="GenEdu 5010 Final Project | IM in Love with Movies" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.25 6a.75.75 0 0 0-.75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A.75.75 0 0 0 7.25 6zM12 6a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 1.5 0v-4.5A.75.75 0 0 0 12 6zm4 .75a.75.75 0 0 1 1.5 0v9.5a.75.75 0 0 1-1.5 0v-9.5z"/><path fill-rule="evenodd" d="M3.75 2A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 20.25V3.75A1.75 1.75 0 0 0 20.25 2H3.75zM3.5 3.75a.25.25 0 0 1 .25-.25h16.5a.25.25 0 0 1 .25.25v16.5a.25.25 0 0 1-.25.25H3.75a.25.25 0 0 1-.25-.25V3.75z"/></svg>
+
+    </a>
+    GenEdu 5010 Final Project | IM in Love with Movies
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/icheft/IM-in-Love-with-Movies" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    icheft/IM-in-Love-with-Movies
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        簡介
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-collection/" class="md-nav__link">
+        資料收集
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        資料處理
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-analysis/" class="md-nav__link">
+        資料分析
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        結論
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">資料處理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="c1"># import required packages, though not all of them are actually used</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.gridspec</span> <span class="k">as</span> <span class="nn">gridspec</span>
+<span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">MaxNLocator</span>
+<span class="kn">import</span> <span class="nn">matplotlib.mlab</span> <span class="k">as</span> <span class="nn">mlab</span>
+<span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="nn">mpl_dates</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">mplfinance</span> <span class="k">as</span> <span class="nn">mpf</span> 
+<span class="kn">from</span> <span class="nn">mplfinance.original_flavor</span> <span class="kn">import</span> <span class="n">candlestick_ohlc</span>
+<span class="c1"># set fig size; bigger DPI results in bigger fig</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.dpi&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">import</span> <span class="nn">statsmodels.stats.api</span> <span class="k">as</span> <span class="nn">sms</span>
+<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
+<span class="kn">import</span> <span class="nn">statsmodels.stats.multicomp</span> <span class="k">as</span> <span class="nn">smm</span>
+<span class="kn">import</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="k">as</span> <span class="nn">sso</span>
+<span class="kn">from</span> <span class="nn">statsmodels.stats.stattools</span> <span class="kn">import</span> <span class="n">durbin_watson</span> <span class="k">as</span> <span class="n">sdw</span>
+<span class="kn">import</span> <span class="nn">statsmodels.stats.libqsturng</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="kn">import</span> <span class="nn">stemgraphic</span> <span class="k">as</span> <span class="nn">stem</span>
+
+<span class="c1"># from ete3 import Tree, faces, AttrFace, TreeStyle, TextFace</span>
+
+<span class="c1"># from mgt2001 import *</span>
+
+<span class="kn">import</span> <span class="nn">mgt2001</span>
+<span class="kn">from</span> <span class="nn">mgt2001.hyp.ind</span> <span class="kn">import</span> <span class="n">two_population</span><span class="p">,</span> <span class="n">two_population_proportion</span>
+<span class="kn">import</span> <span class="nn">mgt2001.hyp.anova</span> <span class="k">as</span> <span class="nn">anova</span>
+<span class="kn">import</span> <span class="nn">mgt2001.hyp.chi2</span> <span class="k">as</span> <span class="nn">chi2</span>
+<span class="kn">import</span> <span class="nn">mgt2001.hyp.non</span> <span class="k">as</span> <span class="nn">non</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span> <span class="c1"># refined style</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="n">mgt2001</span><span class="o">.</span><span class="n">__version__</span> <span class="c1"># show version of mgt2001</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&#39;0.4.1.4&#39;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">movie_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;../data/sorted_all_movie.xlsx&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">covid_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;has_collection&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;belongs_to_collection&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;pre_covid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">covid_date</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;post_covid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">covid_date</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">movie_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="n">display</span><span class="p">(</span><span class="n">movie_df</span><span class="o">.</span><span class="n">tail</span><span class="p">())</span>
+</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>title</th>
+      <th>budget</th>
+      <th>genres</th>
+      <th>original_language</th>
+      <th>production_companies</th>
+      <th>release_date</th>
+      <th>TW_release_date</th>
+      <th>revenue</th>
+      <th>runtime</th>
+      <th>...</th>
+      <th>rating</th>
+      <th>rotten_aud_score</th>
+      <th>zh_title</th>
+      <th>belongs_to_collection</th>
+      <th>has_homepage</th>
+      <th>has_collection</th>
+      <th>pre_covid</th>
+      <th>post_covid</th>
+      <th>release_year</th>
+      <th>release_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4234</td>
+      <td>Scream 3</td>
+      <td>40000000</td>
+      <td>['Horror', 'Mystery']</td>
+      <td>en</td>
+      <td>['Craven-Maddalena Films', 'Dimension Films', ...</td>
+      <td>2000-02-03</td>
+      <td>NaN</td>
+      <td>161834276</td>
+      <td>116</td>
+      <td>...</td>
+      <td>R</td>
+      <td>37.0</td>
+      <td>驚聲尖叫3：終結篇</td>
+      <td>Scream Collection</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1907</td>
+      <td>The Beach</td>
+      <td>40000000</td>
+      <td>['Drama', 'Adventure', 'Romance', 'Thriller']</td>
+      <td>en</td>
+      <td>['Figment Films']</td>
+      <td>2000-02-03</td>
+      <td>NaN</td>
+      <td>144056873</td>
+      <td>119</td>
+      <td>...</td>
+      <td>R</td>
+      <td>57.0</td>
+      <td>海灘</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15655</td>
+      <td>The Tigger Movie</td>
+      <td>30000000</td>
+      <td>['Family', 'Animation', 'Comedy']</td>
+      <td>en</td>
+      <td>['Disney Television Animation', 'DisneyToon St...</td>
+      <td>2000-02-11</td>
+      <td>NaN</td>
+      <td>45554533</td>
+      <td>77</td>
+      <td>...</td>
+      <td>G</td>
+      <td>62.0</td>
+      <td>跳跳虎歷險記</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>14181</td>
+      <td>Boiler Room</td>
+      <td>7000000</td>
+      <td>['Crime', 'Drama', 'Thriller']</td>
+      <td>en</td>
+      <td>['New Line Cinema']</td>
+      <td>2000-02-18</td>
+      <td>NaN</td>
+      <td>28780255</td>
+      <td>118</td>
+      <td>...</td>
+      <td>R</td>
+      <td>78.0</td>
+      <td>搶錢大作戰</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2069</td>
+      <td>The Whole Nine Yards</td>
+      <td>41300000</td>
+      <td>['Comedy', 'Crime']</td>
+      <td>en</td>
+      <td>['Franchise Pictures', 'Morgan Creek Productio...</td>
+      <td>2000-02-18</td>
+      <td>NaN</td>
+      <td>106371651</td>
+      <td>98</td>
+      <td>...</td>
+      <td>R</td>
+      <td>64.0</td>
+      <td>殺手不眨眼</td>
+      <td>The Whole Nine/Ten Yards Collection</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 33 columns</p>
+</div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>title</th>
+      <th>budget</th>
+      <th>genres</th>
+      <th>original_language</th>
+      <th>production_companies</th>
+      <th>release_date</th>
+      <th>TW_release_date</th>
+      <th>revenue</th>
+      <th>runtime</th>
+      <th>...</th>
+      <th>rating</th>
+      <th>rotten_aud_score</th>
+      <th>zh_title</th>
+      <th>belongs_to_collection</th>
+      <th>has_homepage</th>
+      <th>has_collection</th>
+      <th>pre_covid</th>
+      <th>post_covid</th>
+      <th>release_year</th>
+      <th>release_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3167</th>
+      <td>460465</td>
+      <td>Mortal Kombat</td>
+      <td>20000000</td>
+      <td>['Action', 'Fantasy', 'Adventure']</td>
+      <td>en</td>
+      <td>['Atomic Monster', 'Broken Road Productions', ...</td>
+      <td>2021-04-07</td>
+      <td>NaN</td>
+      <td>76706000</td>
+      <td>110</td>
+      <td>...</td>
+      <td>R</td>
+      <td>86.0</td>
+      <td>真人快打</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3168</th>
+      <td>637649</td>
+      <td>Wrath of Man</td>
+      <td>40000000</td>
+      <td>['Action', 'Crime']</td>
+      <td>en</td>
+      <td>['Miramax', 'Metro-Goldwyn-Mayer', 'Toff Guy F...</td>
+      <td>2021-04-22</td>
+      <td>2021-04-29T00:00:00.000Z</td>
+      <td>80648577</td>
+      <td>119</td>
+      <td>...</td>
+      <td>R</td>
+      <td>91.0</td>
+      <td>玩命鈔劫</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3169</th>
+      <td>520663</td>
+      <td>The Woman in the Window</td>
+      <td>4000000</td>
+      <td>['Crime', 'Mystery', 'Thriller']</td>
+      <td>en</td>
+      <td>['Fox 2000 Pictures', 'Scott Rudin Productions...</td>
+      <td>2021-05-14</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>102</td>
+      <td>...</td>
+      <td>R</td>
+      <td>36.0</td>
+      <td>窺探</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3170</th>
+      <td>503736</td>
+      <td>Army of the Dead</td>
+      <td>90000000</td>
+      <td>['Action', 'Horror', 'Thriller']</td>
+      <td>en</td>
+      <td>['The Stone Quarry']</td>
+      <td>2021-05-14</td>
+      <td>NaN</td>
+      <td>780000</td>
+      <td>148</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>活屍大軍</td>
+      <td>Army of the Dead Collection</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3171</th>
+      <td>337404</td>
+      <td>Cruella</td>
+      <td>200000000</td>
+      <td>['Comedy', 'Crime']</td>
+      <td>en</td>
+      <td>['Walt Disney Pictures']</td>
+      <td>2021-05-26</td>
+      <td>NaN</td>
+      <td>46586903</td>
+      <td>134</td>
+      <td>...</td>
+      <td>PG-13</td>
+      <td>97.0</td>
+      <td>時尚惡女：庫伊拉</td>
+      <td>Cruella Collection</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 33 columns</p>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">movie_df</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="png" src="../output_7_0.png" /></p>
+<p>可以看出裡面有需多 outliers，這些 data points 很可能影響到整體結果，所以我們將不考慮這些電影的計算。</p>
+<p>在這邊，我們也可以看到 "revenue"、"budget"、"ROI" 這三個重點項目都不是常態分佈，要做分析的話會有點困難。這時候，我們可以採用 <code>np.log1p()</code> 來做 data transformation。如要要做預測的話，則是用 <code>np.exp1p()</code> 來還原。這部分，會在去除玩異質之後統一處理。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Revenue&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;ROI&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;budget&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="png" src="../output_9_0.png" /></p>
+<div class="alert alert-block alert-info">
+<b>🍿 你知道嗎？</b><br> 票房最高的電影是 2019 年上映的復仇者聯盟：終局之戰。</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">movie_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)[[</span><span class="s1">&#39;release_date&#39;</span><span class="p">,</span> <span class="s1">&#39;zh_title&#39;</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="s1">&#39;director&#39;</span><span class="p">]]</span>
+</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>release_date</th>
+      <th>zh_title</th>
+      <th>revenue</th>
+      <th>director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3005</th>
+      <td>2019-04-24</td>
+      <td>復仇者聯盟：終局之戰</td>
+      <td>2797800564</td>
+      <td>Anthony Russo</td>
+    </tr>
+    <tr>
+      <th>1339</th>
+      <td>2009-12-10</td>
+      <td>阿凡達</td>
+      <td>2787965087</td>
+      <td>James Cameron</td>
+    </tr>
+    <tr>
+      <th>2418</th>
+      <td>2015-12-15</td>
+      <td>STAR WARS：原力覺醒</td>
+      <td>2068223624</td>
+      <td>J.J. Abrams</td>
+    </tr>
+    <tr>
+      <th>2850</th>
+      <td>2018-04-25</td>
+      <td>復仇者聯盟3：無限之戰</td>
+      <td>2046239637</td>
+      <td>Anthony Russo</td>
+    </tr>
+    <tr>
+      <th>2315</th>
+      <td>2015-06-06</td>
+      <td>侏羅紀世界</td>
+      <td>1671713208</td>
+      <td>Colin Trevorrow</td>
+    </tr>
+    <tr>
+      <th>3032</th>
+      <td>2019-07-12</td>
+      <td>獅子王</td>
+      <td>1656943394</td>
+      <td>Jon Favreau</td>
+    </tr>
+    <tr>
+      <th>1756</th>
+      <td>2012-04-25</td>
+      <td>復仇者聯盟</td>
+      <td>1518815515</td>
+      <td>Joss Whedon</td>
+    </tr>
+    <tr>
+      <th>2287</th>
+      <td>2015-04-01</td>
+      <td>玩命關頭7</td>
+      <td>1515047671</td>
+      <td>James Wan</td>
+    </tr>
+    <tr>
+      <th>3086</th>
+      <td>2019-11-20</td>
+      <td>冰雪奇緣2</td>
+      <td>1450026933</td>
+      <td>Chris Buck</td>
+    </tr>
+    <tr>
+      <th>2298</th>
+      <td>2015-04-22</td>
+      <td>復仇者聯盟2：奧創紀元</td>
+      <td>1405403694</td>
+      <td>Joss Whedon</td>
+    </tr>
+    <tr>
+      <th>2822</th>
+      <td>2018-02-13</td>
+      <td>黑豹</td>
+      <td>1346739107</td>
+      <td>Ryan Coogler</td>
+    </tr>
+    <tr>
+      <th>1600</th>
+      <td>2011-07-07</td>
+      <td>哈利波特：死神的聖物 II</td>
+      <td>1341511219</td>
+      <td>David Yates</td>
+    </tr>
+    <tr>
+      <th>2795</th>
+      <td>2017-12-13</td>
+      <td>STAR WARS：最後的絕地武士</td>
+      <td>1332539889</td>
+      <td>Rian Johnson</td>
+    </tr>
+    <tr>
+      <th>2866</th>
+      <td>2018-06-06</td>
+      <td>侏羅紀世界：殞落國度</td>
+      <td>1303459585</td>
+      <td>J. A. Bayona</td>
+    </tr>
+    <tr>
+      <th>2035</th>
+      <td>2013-11-20</td>
+      <td>冰雪奇緣</td>
+      <td>1274219009</td>
+      <td>Chris Buck</td>
+    </tr>
+    <tr>
+      <th>2669</th>
+      <td>2017-03-16</td>
+      <td>美女與野獸</td>
+      <td>1263521126</td>
+      <td>Bill Condon</td>
+    </tr>
+    <tr>
+      <th>2871</th>
+      <td>2018-06-14</td>
+      <td>超人特攻隊2</td>
+      <td>1242805359</td>
+      <td>Brad Bird</td>
+    </tr>
+    <tr>
+      <th>2681</th>
+      <td>2017-04-12</td>
+      <td>玩命關頭8</td>
+      <td>1238764765</td>
+      <td>F. Gary Gray</td>
+    </tr>
+    <tr>
+      <th>1915</th>
+      <td>2013-04-18</td>
+      <td>鋼鐵人 3</td>
+      <td>1214811252</td>
+      <td>Shane Black</td>
+    </tr>
+    <tr>
+      <th>2318</th>
+      <td>2015-06-17</td>
+      <td>小小兵</td>
+      <td>1156730962</td>
+      <td>Kyle Balda</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">rev_outlier</span> <span class="o">=</span> <span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># [:20]</span>
+<span class="n">roi_outlier</span> <span class="o">=</span> <span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># [:5]</span>
+<span class="n">budget_outlier</span> <span class="o">=</span> <span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># [:5]</span>
+
+<span class="k">def</span> <span class="nf">filter_rows_by_values</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span><span class="p">]</span>
+
+<span class="n">rev_df</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e5</span> <span class="o">*</span> <span class="mi">9</span><span class="p">]</span> <span class="c1"># 排除 90 萬以下票房的資料點（這些點沒有被移除）</span>
+<span class="n">rev_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">rev_df</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">rev_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">roi_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">movie_df</span><span class="p">,</span> <span class="s1">&#39;ROI&#39;</span><span class="p">,</span> <span class="n">roi_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">budget_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">movie_df</span><span class="p">,</span> <span class="s1">&#39;budget&#39;</span><span class="p">,</span> <span class="n">budget_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e5</span> <span class="o">*</span> <span class="mi">9</span><span class="p">]</span> <span class="c1"># 排除 90 萬以下票房的資料點（這些點沒有被移除）</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">rev_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;ROI&#39;</span><span class="p">,</span> <span class="n">roi_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;budget&#39;</span><span class="p">,</span> <span class="n">budget_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">u_movie_df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span> 
+
+<span class="c1"># Plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Revenue&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;ROI&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;budget&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2248 entries, 0 to 2247
+Data columns (total 33 columns):
+ #   Column                 Non-Null Count  Dtype         
+---  ------                 --------------  -----         
+ 0   id                     2248 non-null   int64         
+ 1   title                  2248 non-null   object        
+ 2   budget                 2248 non-null   int64         
+ 3   genres                 2248 non-null   object        
+ 4   original_language      2248 non-null   object        
+ 5   production_companies   2248 non-null   object        
+ 6   release_date           2248 non-null   datetime64[ns]
+ 7   TW_release_date        500 non-null    object        
+ 8   revenue                2248 non-null   int64         
+ 9   runtime                2248 non-null   int64         
+ 10  cast                   2248 non-null   object        
+ 11  cast_cnt               2248 non-null   int64         
+ 12  crew_cnt               2248 non-null   int64         
+ 13  female_cast_cnt        2248 non-null   int64         
+ 14  male_cast_cnt          2248 non-null   int64         
+ 15  cast_popularity_ave    2237 non-null   float64       
+ 16  director               2247 non-null   object        
+ 17  direcotr_gender        2247 non-null   float64       
+ 18  TMDB_score             2248 non-null   float64       
+ 19  TMDB_vote_count        2248 non-null   int64         
+ 20  profit                 2248 non-null   int64         
+ 21  ROI                    2248 non-null   float64       
+ 22  rotten_score           1921 non-null   float64       
+ 23  rating                 1880 non-null   object        
+ 24  rotten_aud_score       1921 non-null   float64       
+ 25  zh_title               1848 non-null   object        
+ 26  belongs_to_collection  486 non-null    object        
+ 27  has_homepage           2248 non-null   int64         
+ 28  has_collection         2248 non-null   int64         
+ 29  pre_covid              2248 non-null   int64         
+ 30  post_covid             2248 non-null   int64         
+ 31  release_year           2248 non-null   int64         
+ 32  release_month          2248 non-null   int64         
+dtypes: datetime64[ns](1), float64(6), int64(16), object(10)
+memory usage: 579.7+ KB
+None
+</code></pre></div>
+<p><img alt="png" src="../output_12_1.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="n">u_movie_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)[[</span><span class="s1">&#39;release_date&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;zh_title&#39;</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="s1">&#39;director&#39;</span><span class="p">,</span> <span class="s1">&#39;release_month&#39;</span><span class="p">]]</span>
+</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>release_date</th>
+      <th>title</th>
+      <th>zh_title</th>
+      <th>revenue</th>
+      <th>director</th>
+      <th>release_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1655</th>
+      <td>2014-12-17</td>
+      <td>Night at the Museum: Secret of the Tomb</td>
+      <td>博物館驚魂夜3</td>
+      <td>363204635</td>
+      <td>Shawn Levy</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>942</th>
+      <td>2009-04-02</td>
+      <td>Fast &amp; Furious</td>
+      <td>玩命關頭4</td>
+      <td>363164265</td>
+      <td>Justin Lin</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>422</th>
+      <td>2004-12-09</td>
+      <td>Ocean's Twelve</td>
+      <td>瞞天過海2：長驅直入</td>
+      <td>362744280</td>
+      <td>Steven Soderbergh</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>1554</th>
+      <td>2014-03-07</td>
+      <td>Noah</td>
+      <td>挪亞方舟</td>
+      <td>362637473</td>
+      <td>Darren Aronofsky</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>2001-07-25</td>
+      <td>Planet of the Apes</td>
+      <td>決戰猩球</td>
+      <td>362211740</td>
+      <td>Tim Burton</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">revenue</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">ROI</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">budget</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="png" src="../output_14_0.png" /></p>
+<p>雖然這明顯地去除掉許多 outliers，但我們可以發現一件事：<strong>去掉 outliers 後，可以看到以前的電影表現比較平均一點，越後期的電影看起來只有少數賣座電影在撐場而已</strong>，最高的是博物館驚魂夜3，其次是玩命關頭系列的玩命關頭4。前十名的電影裡面，幾乎都是一些老牌電影（2012 前上映）。整體收入平均也有明顯的下降趨勢。當然，這對在 2020 和 2021 之間上映的電影來說非常不公平。</p>
+<p>所以我們最後只去除前 20 個 outliers 以防止這種一年不如一年的情況發生。</p>
+<div class="highlight"><pre><span></span><code><span class="n">rev_outlier</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">20</span><span class="p">]</span>
+<span class="n">roi_outlier</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">budget_outlier</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mgt2001</span><span class="o">.</span><span class="n">des</span><span class="o">.</span><span class="n">outlier</span><span class="p">(</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">filter_rows_by_values</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">values</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span><span class="p">]</span>
+
+<span class="n">rev_df</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e5</span> <span class="o">*</span> <span class="mi">9</span><span class="p">]</span> <span class="c1"># 排除 90 萬以下票房的資料點（這些點沒有被移除）</span>
+<span class="n">rev_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">rev_df</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">rev_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">roi_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">movie_df</span><span class="p">,</span> <span class="s1">&#39;ROI&#39;</span><span class="p">,</span> <span class="n">roi_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">budget_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">movie_df</span><span class="p">,</span> <span class="s1">&#39;budget&#39;</span><span class="p">,</span> <span class="n">budget_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">movie_df</span><span class="p">[</span><span class="n">movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e5</span> <span class="o">*</span> <span class="mi">9</span><span class="p">]</span> <span class="c1"># 排除 90 萬以下票房的資料點（這些點沒有被移除）</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">rev_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;ROI&#39;</span><span class="p">,</span> <span class="n">roi_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">u_movie_df</span> <span class="o">=</span> <span class="n">filter_rows_by_values</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">,</span> <span class="s1">&#39;budget&#39;</span><span class="p">,</span> <span class="n">budget_outlier</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">u_movie_df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span> 
+
+<span class="c1"># Plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Revenue&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;ROI&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">])</span> <span class="c1"># orient=&#39;h&#39; results in horizontal boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;budget&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2788 entries, 0 to 2787
+Data columns (total 33 columns):
+ #   Column                 Non-Null Count  Dtype         
+---  ------                 --------------  -----         
+ 0   id                     2788 non-null   int64         
+ 1   title                  2788 non-null   object        
+ 2   budget                 2788 non-null   int64         
+ 3   genres                 2788 non-null   object        
+ 4   original_language      2788 non-null   object        
+ 5   production_companies   2788 non-null   object        
+ 6   release_date           2788 non-null   datetime64[ns]
+ 7   TW_release_date        762 non-null    object        
+ 8   revenue                2788 non-null   int64         
+ 9   runtime                2788 non-null   int64         
+ 10  cast                   2788 non-null   object        
+ 11  cast_cnt               2788 non-null   int64         
+ 12  crew_cnt               2788 non-null   int64         
+ 13  female_cast_cnt        2788 non-null   int64         
+ 14  male_cast_cnt          2788 non-null   int64         
+ 15  cast_popularity_ave    2775 non-null   float64       
+ 16  director               2787 non-null   object        
+ 17  direcotr_gender        2787 non-null   float64       
+ 18  TMDB_score             2788 non-null   float64       
+ 19  TMDB_vote_count        2788 non-null   int64         
+ 20  profit                 2788 non-null   int64         
+ 21  ROI                    2788 non-null   float64       
+ 22  rotten_score           2411 non-null   float64       
+ 23  rating                 2361 non-null   object        
+ 24  rotten_aud_score       2410 non-null   float64       
+ 25  zh_title               2360 non-null   object        
+ 26  belongs_to_collection  789 non-null    object        
+ 27  has_homepage           2788 non-null   int64         
+ 28  has_collection         2788 non-null   int64         
+ 29  pre_covid              2788 non-null   int64         
+ 30  post_covid             2788 non-null   int64         
+ 31  release_year           2788 non-null   int64         
+ 32  release_month          2788 non-null   int64         
+dtypes: datetime64[ns](1), float64(6), int64(16), object(10)
+memory usage: 718.9+ KB
+None
+</code></pre></div>
+<p><img alt="png" src="../output_16_1.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">revenue</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">ROI</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">budget</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="png" src="../output_17_0.png" /></p>
+<p>我們可以看到，用 20-5-5 去除掉 outliers 後，結果不僅較為合理，也幫我們去除掉了非常大、不合理的數字。因此我們便用剩下的 2788 筆資料進行更近一步的分析。另外，在這邊也要注意到，不是所有的 column 都是 2788 筆資料，有些 data 是有少的。所以在做分析時要格外小心。</p>
+<div class="highlight"><pre><span></span><code><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;log_revenue&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;revenue&#39;</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;log_budget&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;budget&#39;</span><span class="p">])</span>
+<span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;log_ROI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;ROI&#39;</span><span class="p">])</span>
+
+<span class="c1"># 年份以及月份</span>
+<span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;release_month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+<span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;release_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">u_movie_df</span><span class="p">[</span><span class="s1">&#39;release_date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">u_movie_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)[[</span><span class="s1">&#39;release_date&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;zh_title&#39;</span><span class="p">,</span> <span class="s1">&#39;revenue&#39;</span><span class="p">,</span> <span class="s1">&#39;director&#39;</span><span class="p">,</span> <span class="s1">&#39;release_month&#39;</span><span class="p">]]</span>
+</code></pre></div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>release_date</th>
+      <th>title</th>
+      <th>zh_title</th>
+      <th>revenue</th>
+      <th>director</th>
+      <th>release_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2220</th>
+      <td>2016-04-27</td>
+      <td>Captain America: Civil War</td>
+      <td>美國隊長3：英雄內戰</td>
+      <td>1153296293</td>
+      <td>Anthony Russo</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2618</th>
+      <td>2018-12-07</td>
+      <td>Aquaman</td>
+      <td>水行俠</td>
+      <td>1148461807</td>
+      <td>James Wan</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2680</th>
+      <td>2019-06-28</td>
+      <td>Spider-Man: Far From Home</td>
+      <td>蜘蛛人：離家日</td>
+      <td>1131927996</td>
+      <td>Jon Watts</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2646</th>
+      <td>2019-03-06</td>
+      <td>Captain Marvel</td>
+      <td>驚奇隊長</td>
+      <td>1128276090</td>
+      <td>Ryan Fleck</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1447</th>
+      <td>2011-06-28</td>
+      <td>Transformers: Dark of the Moon</td>
+      <td>變形金剛3：黑月降臨</td>
+      <td>1123794079</td>
+      <td>Michael Bay</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>384</th>
+      <td>2003-12-01</td>
+      <td>The Lord of the Rings: The Return of the King</td>
+      <td>魔戒三部曲：王者再臨</td>
+      <td>1118888979</td>
+      <td>Peter Jackson</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>1664</th>
+      <td>2012-10-25</td>
+      <td>Skyfall</td>
+      <td>007：空降危機</td>
+      <td>1108561013</td>
+      <td>Sam Mendes</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>1616</th>
+      <td>2012-07-16</td>
+      <td>The Dark Knight Rises</td>
+      <td>黑暗騎士：黎明昇起</td>
+      <td>1081041287</td>
+      <td>Christopher Nolan</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2705</th>
+      <td>2019-10-02</td>
+      <td>Joker</td>
+      <td>小丑</td>
+      <td>1074251311</td>
+      <td>Todd Phillips</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>2734</th>
+      <td>2019-12-18</td>
+      <td>Star Wars: The Rise of Skywalker</td>
+      <td>STAR WARS：天行者的崛起</td>
+      <td>1074144248</td>
+      <td>J.J. Abrams</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2676</th>
+      <td>2019-06-19</td>
+      <td>Toy Story 4</td>
+      <td>玩具總動員4</td>
+      <td>1073394593</td>
+      <td>Josh Cooley</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1291</th>
+      <td>2010-06-16</td>
+      <td>Toy Story 3</td>
+      <td>玩具總動員3</td>
+      <td>1066969703</td>
+      <td>Lee Unkrich</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>714</th>
+      <td>2006-07-06</td>
+      <td>Pirates of the Caribbean: Dead Man's Chest</td>
+      <td>神鬼奇航2：加勒比海盜</td>
+      <td>1065659812</td>
+      <td>Gore Verbinski</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2334</th>
+      <td>2016-12-14</td>
+      <td>Rogue One: A Star Wars Story</td>
+      <td>星際大戰外傳：俠盜一號</td>
+      <td>1056057273</td>
+      <td>Gareth Edwards</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2666</th>
+      <td>2019-05-22</td>
+      <td>Aladdin</td>
+      <td>阿拉丁</td>
+      <td>1047612394</td>
+      <td>Guy Ritchie</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2408</th>
+      <td>2017-06-15</td>
+      <td>Despicable Me 3</td>
+      <td>神偷奶爸3</td>
+      <td>1031552585</td>
+      <td>Kyle Balda</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2245</th>
+      <td>2016-06-16</td>
+      <td>Finding Dory</td>
+      <td>海底總動員2：多莉去哪兒</td>
+      <td>1028570889</td>
+      <td>Andrew Stanton</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>2010-03-03</td>
+      <td>Alice in Wonderland</td>
+      <td>魔境夢遊</td>
+      <td>1025467110</td>
+      <td>Tim Burton</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2188</th>
+      <td>2016-02-11</td>
+      <td>Zootopia</td>
+      <td>動物方城市</td>
+      <td>1023784195</td>
+      <td>Byron Howard</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1673</th>
+      <td>2012-11-26</td>
+      <td>The Hobbit: An Unexpected Journey</td>
+      <td>哈比人：意外旅程</td>
+      <td>1021103568</td>
+      <td>Peter Jackson</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">u_movie_df</span><span class="p">[[</span><span class="s1">&#39;log_revenue&#39;</span><span class="p">,</span> <span class="s1">&#39;log_budget&#39;</span><span class="p">,</span> <span class="s1">&#39;log_ROI&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="png" src="../output_21_0.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../data-collection/" class="md-footer__link md-footer__link--prev" aria-label="上一頁: 資料收集" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一頁
+              </span>
+              資料收集
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../data-analysis/" class="md-footer__link md-footer__link--next" aria-label="下一頁: 資料分析" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一頁
+              </span>
+              資料分析
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 IM in Love with Movies @ ccClub, NTU
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "navigation.instant", "navigation.expand"], "translations": {"clipboard.copy": "\u8907\u88fd", "clipboard.copied": "\u5df2\u8907\u88fd", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e\uff1f\uff1b]+", "search.placeholder": "\u641c\u5c0b", "search.result.placeholder": "\u6253\u5b57\u9032\u884c\u641c\u5c0b", "search.result.none": "\u6c92\u6709\u7b26\u5408\u7684\u9805\u76ee", "search.result.one": "\u627e\u5230 1 \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.other": "\u627e\u5230 # \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+        <script src="../js/config.js"></script>
+      
+        <script src="../js/polyfill.js"></script>
+      
+        <script src="../js/mathjax/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
