@@ -22,7 +22,7 @@ theme:
         # Dark mode
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
-          primary: black
+          primary: cyan
           accent: purple
           toggle:
             icon: material/weather-night

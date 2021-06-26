@@ -538,13 +538,13 @@ stats.ranksums(positive['revenue'], negative['revenue'])
 
 
 
-由上述檢定結果（p-vlaue < 0.05)，我們可以拒絕虛無假設，可以推論當女性演員數量大於男性演員數量時，票房較高。
+由上述檢定結果（$p$-vlaue $< 0.05$)，我們可以拒絕虛無假設，可以推論當女性演員數量大於男性演員數量時，票房較高。
 
 ### 四、評分網站的差異：
 
 #### 1. 影評人與大眾評分差異比較：
 
-電影評分網站Rotten Tomato有許多評分機制，其中最受到矚目的兩個分別是「影評人的評分」與「大眾的評分」。以此為發想，我們比較Rotten Tomato上影評人與大眾的評分是否存在差異。 
+電影評分網站 Rotten Tomatoes 有許多評分機制，其中最受到矚目的兩個分別是「影評人的評分」與「大眾的評分」。以此為發想，我們比較 Rotten Tomatoes 上影評人與大眾的評分是否存在差異。 
 
 
 ```python
@@ -736,7 +736,7 @@ stats.wilcoxon(df_compare_rating_1['rotten_score'], df_compare_rating_1['rotten_
 
 由檢定結果發現 p-value < 0.05，因此我們可以拒絕虛無假設，推論專業影評人與觀眾評分不盡相同。
 
-#### 2.不同平台間觀眾評分比較: TMDb vs Rotten Tomato
+#### 2.不同平台間觀眾評分比較: TMDb vs Rotten Tomatoes
 
 我們好奇針對同一部電影在不同平台上的觀眾評分是否有差異，因此比較爛番茄觀眾評分及TMDb上的觀眾評分結果是否相同。
 
