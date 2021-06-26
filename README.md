@@ -17,7 +17,24 @@ B08705027 林暐倫 資管二 •
 B08705003 楊佳芊 資管二 <br>
 </h5>
 
-\* 最終成果用網頁版看可能會比較合適！
+<hr>
+
+<p align="center">
+  <a href="#reminders">Reminders</a> •
+  <a href="#outline">Outline</a> •
+  <a href="#skill-sets">Skill Sets</a> •
+  <a href="#findings">Findings</a> •
+  <a href="#credits">Credits</a>
+</p>
+
+<hr>
+
+## Reminders
+
++ 最終成果用[網頁版](https://icheft.github.io/IM-in-Love-with-Movies/)看可能會比較合適！
++ 我們也有將最終成果放在 `ipynb` 檔裡，請點[此](https://github.com/icheft/IM-in-Love-with-Movies/blob/master/report/full-report.ipynb)查看。  
++ 更新版的投影片也同樣在 `report/` 裡，請點[此](https://github.com/icheft/IM-in-Love-with-Movies/blob/master/report/slides.pdf)查看。
++ 其他爬蟲相關的程式碼統一放在 [`src/main-*.py`](https://github.com/icheft/IM-in-Love-with-Movies/tree/master/src) 裡面。
 
 
 
